@@ -4,16 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 16px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
     <title>Controle de Saída</title>
 </head>
 
 <body>
     <h1>Controle de Saída</h1>
-    <div id="container-formulario">
+    <div class="container-formulario">
         <form>
-            <div id="menu-do-formulario">
+            <div class="menu-do-formulario">
                 <div>
                     <label for="inData">Data:</label>
                     <input type="date" name="inData" id="inData">
@@ -30,9 +46,23 @@
                     <label for="inHoraRetorno">Horário de Retorno</label>
                     <input type="time" name="inHoraRetorno" id="inHoraRetorno">
                 </div>
+                <div>
+                    <input type="submit" value="Adicionar">
+                </div>
+                <div>
+                    <input type="file" id="inputExcel" accept=".xlsx">
+                </div>
             </div>
         </form>
     </div>
+    <div class="container">
+        <div class="card">
+            <div class="mes">
+                janeiro
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 
