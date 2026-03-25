@@ -4,66 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .card {
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 16px;
-            width: 100px;
-            height: 100px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-    </style>
-    <title>Controle de Saída</title>
+    <title>Análise Controle de Saída</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Controle de Saída</h1>
-    <div class="container-formulario">
-        <form>
-            <div class="menu-do-formulario">
-                <div>
-                    <label for="inData">Data:</label>
-                    <input type="date" name="inData" id="inData">
-                </div>
-                <div>
-                    <label for="inCliente">Cliente/Lugar</label>
-                    <input type="text" name="inCliente" id="inCliente">
-                </div>
-                <div>
-                    <label for="inHoraSaida">Horário de Saída</label>
-                    <input type="time" name="inHoraSaida" id="inHoraSaida">
-                </div>
-                <div>
-                    <label for="inHoraRetorno">Horário de Retorno</label>
-                    <input type="time" name="inHoraRetorno" id="inHoraRetorno">
-                </div>
-                <div>
-                    <input type="submit" value="Adicionar">
-                </div>
-                <div>
-                    <input type="file" id="inputExcel" accept=".xlsx">
-                </div>
-            </div>
-        </form>
-    </div>
     <div class="container">
-        <div class="card">
-            <div class="mes">
-                janeiro
+        <div class="container-formulario">
+            <h1>Projeto Análise de Controle de saída</h1>
+
+        </div>
+        <div class="container-calendario">
+            <div class="meses">
+                Janeiro
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
