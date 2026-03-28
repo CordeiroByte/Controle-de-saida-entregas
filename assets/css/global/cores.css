@@ -1,0 +1,43 @@
+:root {
+    /* Cores principais */
+    --cor-primaria: #1E3A8A;
+    --cor-secundaria: #3B82F6;
+
+    /* Fundo e estrutura */
+    --cor-fundo: #F3F4F6;
+    --cor-card: #FFFFFF;
+
+    /* Texto */
+    --cor-texto: #374151;
+    --cor-texto-claro: #6B7280;
+
+    /* Bordas */
+    --cor-borda: #E5E7EB;
+
+    /* Status */
+    --cor-sucesso: #22C55E;
+    --cor-erro: #EF4444;
+    --cor-alerta: #F59E0B;
+    --cor-info: #3B82F6;
+}
+
+/* Dark Mode automático */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --cor-primaria: #3B82F6;
+        --cor-secundaria: #60A5FA;
+
+        --cor-fundo: #111827;
+        --cor-card: #1F2933;
+
+        --cor-texto: #F9FAFB;
+        --cor-texto-claro: #9CA3AF;
+
+        --cor-borda: #374151;
+
+        --cor-sucesso: #22C55E;
+        --cor-erro: #F87171;
+        --cor-alerta: #FBBF24;
+        --cor-info: #60A5FA;
+    }
+} */
